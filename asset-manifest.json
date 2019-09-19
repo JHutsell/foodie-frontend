@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/foodie-frontend/static/css/main.7e789bd3.chunk.css",
-    "main.js": "/foodie-frontend/static/js/main.eb35d779.chunk.js",
-    "main.js.map": "/foodie-frontend/static/js/main.eb35d779.chunk.js.map",
+    "main.js": "/foodie-frontend/static/js/main.e3b53e68.chunk.js",
+    "main.js.map": "/foodie-frontend/static/js/main.e3b53e68.chunk.js.map",
     "runtime~main.js": "/foodie-frontend/static/js/runtime~main.eba4a3b3.js",
     "runtime~main.js.map": "/foodie-frontend/static/js/runtime~main.eba4a3b3.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/foodie-frontend/static/css/2.22a7d4ef.chunk.css",
     "static/js/2.67de9834.chunk.js": "/foodie-frontend/static/js/2.67de9834.chunk.js",
     "static/js/2.67de9834.chunk.js.map": "/foodie-frontend/static/js/2.67de9834.chunk.js.map",
     "index.html": "/foodie-frontend/index.html",
-    "precache-manifest.419bd83c4674c1649be2ef74053f38ed.js": "/foodie-frontend/precache-manifest.419bd83c4674c1649be2ef74053f38ed.js",
+    "precache-manifest.d858c11eeff8e5cb90ede138b9ac830a.js": "/foodie-frontend/precache-manifest.d858c11eeff8e5cb90ede138b9ac830a.js",
     "service-worker.js": "/foodie-frontend/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/foodie-frontend/static/css/2.22a7d4ef.chunk.css.map",
     "static/css/main.7e789bd3.chunk.css.map": "/foodie-frontend/static/css/main.7e789bd3.chunk.css.map",
