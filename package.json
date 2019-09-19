@@ -2,7 +2,7 @@
   "name": "foodie-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://samip-sharma.github.io/foodie-frontend/",
+  "homepage": "http://jhutsell.github.io/foodie-frontend/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "google-map-react": "^1.1.4",
