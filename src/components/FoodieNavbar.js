@@ -23,6 +23,11 @@ class FoodieNavbar extends React.Component {
         localStorage.clear()
         this.props.history.push("/")
     }
+
+    handleProfileClick = () => {
+        localStorage.clickedUser=localStorage.user_id
+        this.props.history.push("/profile")
+    }
     
     render() {
         return(
@@ -32,7 +37,7 @@ class FoodieNavbar extends React.Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link  href="#profile">My Profile</Nav.Link>
+                            <Nav.Link  onClick={ this.handleProfileClick}>My Profile</Nav.Link>
                             <Nav.Link  href="#friendlist">Friendlist</Nav.Link>
                             <button onClick={ this.handleLogout }>Logout</button>
                             </Nav>
