@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button} from 'react-bootstrap';
 
 export default class Login extends React.Component{
     
@@ -47,15 +48,19 @@ export default class Login extends React.Component{
         return(
             <div className="login-page">
                 <img src={require('../image/Foodie-logo.png')} alt="logo" />
-                <form onSubmit={ this.handleSubmit }>
-                <input onChange={ this.handleInputChange } value={ this.state.user_name } type="text" placeholder="User Name" name="user_name"/>
-                <br></br><br></br>
-                <input onChange={ this.handleInputChange } value={ this.state.password }  type="password" placeholder="Password" name="password"/>
-                <br></br><br></br>
-                <input type="submit" value="submit"/>
-                </form>
-                <br></br>
-                <button onClick={ this.handleRegisterClick }>Register</button>
+                <div className="login-page-box">
+                    <h2 style={{"color": "yellow"}}>Welcome Back 🍔</h2>
+                    <form onSubmit={ this.handleSubmit }>
+                    <input className="username-input" onChange={ this.handleInputChange } value={ this.state.user_name } type="text" placeholder="User Name" name="user_name"/>
+                    <br></br><br></br>
+                    <input className="password-input" onChange={ this.handleInputChange } value={ this.state.password }  type="password" placeholder="Password" name="password"/>
+                    <br></br><br></br>
+                    <Button type="submit" value="submit" variant="primary">Submit</Button>
+                    </form>
+                    <br></br>
+                    <h2 style={{"color": "yellow"}}>Don't have an Account?</h2>
+                    <Button variant="warning" onClick={ this.handleRegisterClick }>Register</Button>
+                </div>
             </div>
         )
     }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
 
 export default class Register extends React.Component{
     
@@ -43,19 +44,21 @@ export default class Register extends React.Component{
         return(
             <div className="register-page">
                 <img src={require('../image/Foodie-logo.png')} alt="logo" />
-                <h2>Create an Account</h2>
-                <form onSubmit={ this.handleSubmit }>
-                <input onChange={ this.handleInputChange } value={ this.state.name } type="text" placeholder="Name" name="name"/>
-                <br></br><br></br>
-                <input onChange={ this.handleInputChange } value={ this.state.user_name } type="text" placeholder="User Name" name="user_name"/>
-                <br></br><br></br>
-                <input onChange={ this.handleInputChange } value={ this.state.password }  type="password" placeholder="Password" name="password"/>
-                <br></br><br></br>
-                <input type="submit" value="submit"/>
-                </form>
-                <br></br>
-                <h3>Already Have an Account?</h3>
-                <button onClick={ this.handleLoginClick }>Login</button>
+                <div className="register-page-box">
+                    <h2>Create an Account</h2>
+                    <form onSubmit={ this.handleSubmit }>
+                    <input className="name-input" onChange={ this.handleInputChange } value={ this.state.name } type="text" placeholder="Name" name="name"/>
+                    <br></br><br></br>
+                    <input className="username-input" onChange={ this.handleInputChange } value={ this.state.user_name } type="text" placeholder="User Name" name="user_name"/>
+                    <br></br><br></br>
+                    <input className="password-input" onChange={ this.handleInputChange } value={ this.state.password }  type="password" placeholder="Password" name="password"/>
+                    <br></br><br></br>
+                    <Button type="submit" value="submit" variant="primary">Submit</Button>
+                    </form>
+                    <br></br>
+                    <h3>Already Have an Account?</h3>
+                    <Button variant="warning" onClick={ this.handleLoginClick }>Login</Button>
+                </div>
             </div>
         )
     }

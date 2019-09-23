@@ -63,7 +63,48 @@ code {
   background-image: url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
   padding-top: 10%;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.login-page-box {
+  border: 1px solid black;
+  text-align: center;
+  width: 35%;
+  height: 400px;
+  margin: 0 35% 0 32%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 5%;
+  background-color: rgba(62, 126, 42, 0.8)
+}
+
+.register-page-box {
+  border: 1px solid black;
+  text-align: center;
+  width: 35%;
+  height: 450px;
+  margin: 0 35% 0 32%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 5%;
+  background-color: rgba(62, 126, 42, 0.8)
+}
+
+.username-input, .password-input, .name-input {
+  padding: 0 10px;
+  width: 300px;
+  height: 40px;
+  color: black;
+  text-shadow: 1px 1px 1px black;
+ /* background: rgba(0, 0, 0, 0.16); */
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.password-input::placeholder, .username-input::placeholder, .name-input::placeholder {
+  color: black
 }
 
 .register-page {
