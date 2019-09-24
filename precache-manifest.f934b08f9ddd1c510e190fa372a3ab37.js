@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d4568ac96bc3db8338705b9d440ec92",
+    "revision": "838f0bc98ccf81b5d0cba7cde1d49889",
     "url": "/foodie-frontend/index.html"
   },
   {
-    "revision": "3584ca8dcb8cd38d054a",
+    "revision": "18a5c351ca63dd1d80db",
     "url": "/foodie-frontend/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "7be817582e6fb13a595f",
-    "url": "/foodie-frontend/static/css/main.097f843c.chunk.css"
+    "revision": "e2d5ce7563053591a07c",
+    "url": "/foodie-frontend/static/css/main.50e32564.chunk.css"
   },
   {
-    "revision": "3584ca8dcb8cd38d054a",
-    "url": "/foodie-frontend/static/js/2.cbfd7636.chunk.js"
+    "revision": "18a5c351ca63dd1d80db",
+    "url": "/foodie-frontend/static/js/2.47201c94.chunk.js"
   },
   {
-    "revision": "7be817582e6fb13a595f",
-    "url": "/foodie-frontend/static/js/main.e95983c9.chunk.js"
+    "revision": "e2d5ce7563053591a07c",
+    "url": "/foodie-frontend/static/js/main.66889c29.chunk.js"
   },
   {
     "revision": "85f6e45369cf2c1e09d8",
