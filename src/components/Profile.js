@@ -1,5 +1,6 @@
 import React from 'react';
 import FoodieNavbar from './FoodieNavbar';
+import {Button} from 'react-bootstrap';
 
 class Profile extends React.Component {
 
@@ -86,7 +87,7 @@ class Profile extends React.Component {
     }
 
     render() {
-        
+        console.log(this.state.user)
         let userRestaurants;
         if (this.state.user.restaurants) {
             userRestaurants = this.state.user.restaurants.map((restaurant) => <li onClick={ () => this.handleClick(restaurant.real_id) }> {restaurant.name} </li>)
@@ -100,16 +101,19 @@ class Profile extends React.Component {
                 <FoodieNavbar handleSearchRestaurant={this.props.handleSearchRestaurant} history={this.props.history}/>
                 <div className="profile-page-content">
                     <img className="profile-image" src={require('../image/foodie-profile-pic.jpg')} alt="profile-pic" />
-                    <h1 className="profile-name">{ this.state.user.name }</h1>
+                    <div className="profile-name">
+                    <h1>{ this.state.user.user_name }</h1>
+                    <h4>{ this.state.user.name }</h4>
+                    </div>
                     <br></br>
                     <ul><h2 style={{color:"yellow", border:"solid white 2px", background:"red"}}>Liked Restaurants:</h2> <div className="liked-restaurants-list">{ userRestaurants }</div></ul>
                     <br></br>
                     {(boolean)?
-                        <button onClick={this.handleAddFriend} >Add Friend</button>
+                        <Button variant="success" onClick={this.handleAddFriend}>Follow</Button>
                         :
                         null
                     }
-                    {addOrRemoveBoolean? <button onClick={this.handleDeleteFriend}>Remove Friend</button>:null}
+                    {addOrRemoveBoolean? <Button variant="danger" onClick={this.handleDeleteFriend}>Unfollow</Button>:null}
                     <br></br><br></br><br></br>
                 </div>
             </div>

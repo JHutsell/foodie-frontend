@@ -1,4 +1,5 @@
 import React from 'react'
+import {Button} from 'react-bootstrap';
 
 export default class RestaurantComments extends React.Component{
     
@@ -13,7 +14,7 @@ export default class RestaurantComments extends React.Component{
                 return <div><p> <span> {comment.user.name}: </span> {comment.context}
                 
                 {parseInt(comment.user.id) === parseInt(localStorage.user_id) ?
-                    <button className="delete-comment-button" onClick={()=> this.handleDeleteButton(comment) }>x</button> :
+                    <Button variant="danger" style={{"margin-left":"7px"}} onClick={()=> this.handleDeleteButton(comment) }>Delete Comment</Button> :
                     null
                 }
                 </p>

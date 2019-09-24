@@ -4,14 +4,21 @@ export default class UsersThatLikedRestaurant extends React.Component{
 
     render () {
         let arr
+        let display
         if (this.props.usersLiked){
         arr = this.props.usersLiked.map((user)=>{
+            {user.user_name.length <= 7 
+            ?
+            display = user.user_name
+            :
+            display = user.user_name.slice(0, 5) + "..."
+            }
             return <span><button 
             className="restaurant-user-button"
             onClick={()=>{
             localStorage.clickedUser=user.id 
             this.props.history.push("/profile")
-            }}>{user.name}</button></span>
+            }}>{display}</button></span>
         }
         )}
         return(
@@ -19,3 +26,4 @@ export default class UsersThatLikedRestaurant extends React.Component{
         )
     }
 }
+//7

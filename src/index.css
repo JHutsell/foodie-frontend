@@ -167,13 +167,39 @@ code {
 }
 
 .friend-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   background-image: url("https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
   background-size: cover;
   height: 100vh;
 }
 
+.friends-search {
+  padding-top: 100px;
+  width: 500px;
+  color: yellow;
+}
+
+
+.searched-users{
+  margin:10px;
+  padding:10px;
+  border: 1px solid yellow;
+  width: 300px;
+  text-align: center;
+  align-self: center;
+}
+
+.searched-users:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
 .friend-list-content {
   padding-top: 100px;
+  width: 500px;
   text-align: center;
   color:yellow;
 }
@@ -226,7 +252,8 @@ li {
 
 li:hover {
   background-color: rgb(128, 4, 0);
-  zoom: 1.5;
+  zoom: 1.2;
+  cursor: pointer;
 }
 
 .home-map{
@@ -353,12 +380,6 @@ li:hover {
   0%   { transform: scale(30); }
   100% { transform: scale(1); }
 }
-
-.delete-comment-button {
-  margin-left: 5px;
-  background-color: red;
-}
-
 
 .marker-gmap:hover{
   cursor:crosshair;
