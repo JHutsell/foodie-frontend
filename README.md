@@ -6,4 +6,5 @@ Foodie is a Yelp inspired social media/restaurant information application. Users
 + Accurate user interface is displayed using the Google Maps API 
 + Fully functional login, registration, and database 
 + Backend can be found at: https://github.com/JHutsell/Foodie-backend
++ Video demo can be found at: https://www.youtube.com/watch?v=LiiPKq4qTFA&t=13s
 + Application is live hosted at: https://jhutsell.github.io/foodie-frontend/
